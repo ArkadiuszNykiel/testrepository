@@ -1,0 +1,73 @@
+
+.loading-background {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.46);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Loader container */
+.loading {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    animation: rotateDots 2s infinite linear; /* Rotate the dots container */
+}
+
+/* Dots */
+.dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(173, 121, 0);
+    border-radius: 50%;
+    animation: orbit 1.5s infinite linear;
+}
+
+/* Dot 1 - Top */
+.dot-1 {
+    animation-delay: 0s;
+}
+
+/* Dot 2 - Right */
+.dot-2 {
+    animation-delay: 0.5s;
+}
+
+/* Dot 3 - Bottom */
+.dot-3 {
+    animation-delay: 1s;
+}
+
+/* Dot 4 - Left */
+.dot-4 {
+    animation-delay: 1.5s;
+}
+
+/* Orbit animation */
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg) translateX(40px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(40px) rotate(-360deg);
+    }
+}
+
+/* Rotate the entire dots container */
+@keyframes rotateDots {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

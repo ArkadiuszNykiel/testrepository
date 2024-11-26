@@ -1,0 +1,31 @@
+/* Remove dots from the list */
+.countries-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style for individual country items */
+.countries-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Add hover effect with drop shadow */
+.countries-list-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #e6e6e6;
+}
+
+/* Align flag and name */
+.country-flag {
+    max-width: 50px;
+    margin-left: 10px;
+    border-radius: 5px;
+}

@@ -1,0 +1,29 @@
+
+
+.country-item {
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.country-item:hover {
+    background-color: #e6e6e6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.country-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    flex: 1;
+}
+
+.country-flag {
+    width: 40px;  
+    height: auto;
+    margin-left: 10px;  
+}
